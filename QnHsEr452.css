@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8ef;
+  color: #333;
+}
+
+header {
+  background-color: #ffcc99;
+  text-align: center;
+  padding: 1rem;
+  color: #5a3e2b;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.editor {
+  flex: 1;
+  min-width: 320px;
+  max-width: 700px;
+}
+
+input[type="file"],
+input[type="color"],
+button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #ff9966;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff884d;
+}
+
+canvas {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+}
+
+.background-options {
+  margin: 1rem 0;
+}
+
+.backgrounds {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bg-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.bg-thumb:hover {
+  border-color: #ff9966;
+}
+
+.download-buttons button {
+  margin-right: 1rem;
+}
+
+.ad-section {
+  width: 250px;
+  padding: 1rem;
+  background-color: #fff0e6;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.ad-section img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #ffe6cc;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #d2691e;
+}
+
+.qr-code {
+  width: 100px;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,263 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #f5deb3;
+      
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;  
+    background: linear-gradient(0deg, #B21807, #EB5406);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: perspective(800px) rotateX(0deg);
+    top: 0px;
+    width: 100%;
+      z-index: 999;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 0px solid black;
+    text-shadow: 0px 0px 1px black;
+    border-radius: 5px;
+  }
+  
+  .navbar a:hover {
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black;
+    text-shadow: 0px 0px 2px white;
+    color:black;
+    background-color: rgba(255,255,255,0.7);
+    animation: colorAnimation 3s ease infinite alternate both;
+  }
+  
+  /* Profile Section */
+  .profile-container {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-container h1 {
+    color: #f57c00;
+    margin-bottom: 20px;
+    margin-top:50px;
+  }
+  
+  .profile-box {
+      position:absolute;
+      margin-left: -240px;
+    background: #ffe0b2;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    /*background-image: url('profile_pic.jpg');*/
+    background-position: right;
+    -webkit-background-position: right;
+    -o-background-position: right;
+    -moz-background-position: right;
+    background-size: 30% 60%;
+    background-repeat: no-repeat;
+    /*border-radius:50%;*/
+    border: 5px solid white;
+      overflow:hidden;
+  }
+  
+  .profile-box p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #5d4037;
+    cursor: pointer;
+  }
+  .profile-box p::after{
+      content"";
+      background:red;
+      border: 1px solid transparent;
+      border-radius:0px 5px 0px 5px;
+      width:250px;
+      
+  }
+.profile-box p:hover::after{
+    
+    width:750px;
+    border: 1px solid black;
+    transition: all 2s ease;
+}
+  /* Social Media Icons */
+  .social-icons {
+    position: absolute;
+    margin-top: 500px;
+  }
+  
+  .social-icons a {
+    color: #f57c00;
+    font-size: 24px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    padding-left:2px;
+    padding-right:2px;
+    transition: all 0.3s ease, color 0.3s ease;
+
+  }
+  
+  .social-icons a:hover {
+    color: #e65100;
+    transform: scale(1.2);
+    border: 1px solid black;
+  }
+  .menu_hover
+  {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px black;
+    color:black;
+    
+  }
+  .social-media
+  {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px black;
+    color:black;
+    
+  }
+#projects ul li a
+{
+    font-size: 9pt;
+}
+@keyframes colorAnimation
+{
+    0%{color:black;border-color:black;}
+    25%{color:red;border-color:red;}
+    50%{color:black;border-color:black;}
+    75%{color:red;border-color:red;}
+    100%{color:black;border-color:black;}
+}
+    .scene {
+      position: relative;  
+      width: 200px;
+      height: 200px;
+      perspective: 800px;
+      transform: scale(0.5);
+      margin-left: 1050px;
+      margin-top: 350px;
+      display: none;
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg) rotateY(0deg);
+      animation: rotateXaxis 5s 1 linear;
+      animation: rotateYaxis 5s 2s infinite linear;
+      box-shadow: 0px 0px 5px black;  
+        
+    }
+
+    .cube-face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid black;
+      line-height: 200px;
+      font-size: 20px;
+      text-align: center;
+      text-shadow: 0px 0px 2px white, 0px 0px 10px black;
+      
+    }
+
+    .front  { transform: translateZ(100px); }
+    .back   { transform: rotateY(180deg) translateZ(100px); }
+    .right  { transform: rotateY(90deg) translateZ(100px); }
+    .left   { transform: rotateY(-90deg) translateZ(100px); }
+    .top    { transform: rotateX(90deg) translateZ(100px); }
+    .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+    @keyframes rotateXaxis {
+      from { transform: rotateX(0deg); }
+      to   { transform: rotateX(360deg); }
+    }
+
+    @keyframes rotateYaxis {
+      from { transform: rotateY(0deg); }
+      to   { transform: rotateY(360deg); }
+    }
+
+    
+ .facebook
+{
+ background-image: url("images/facebook.png");
+ background-size: 100% 100%;
+ background-color: blue;
+}
+
+ .instagram
+{
+ background-image: url("images/insta.png");
+ background-size: 70% 70%;
+background-repeat: no-repeat;
+/*background-position: center center;*/
+ background-color: white;
+}
+
+ .youtube
+{
+ background-image: url("images/youtube.png");
+ background-size: 100% 100%;
+ background-color: white;
+}
+
+ .threads
+{
+ background-image: url("images/threads.jpg");
+ background-size: 100% 100%;
+ background-color: white;
+}
+
+ .x
+{
+ background-image: url("images/x.jpg");
+ background-size: 100% 100%;
+ background-color: white;
+}
+
+ .logo
+{
+ background-image: url("logo.jpg");
+ background-size: 100% 100%;
+ background-color: black;
+}
+
+
+

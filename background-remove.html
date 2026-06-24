@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Remove and replace image backgrounds using a custom color picker. Download edited images in PNG or JPEG.">
+  <meta name="keywords" content="background remover, image editing, png, jpeg, color picker, photo editor">
+  <meta name="author" content="Poosala Raju">
+  <title>Background Remover</title>
+  <link rel="stylesheet" href="QnHsEr452.css" />
+  <script src="jHvB45Xo0nF.js" defer></script>
+  <script src="script.min.js"></script>
+</head>
+<body oncontextmenu="return false" onselectstart="return false">
+  <header>
+    <h1>Background Remover</h1>
+  </header>
+
+  <main>
+    <section class="editor">
+      <input type="file" id="upload" accept="image/*" />
+      <label>
+        Pick background color to remove:
+        <input type="color" id="colorPicker" />
+      </label>
+      <button id="removeBgBtn">Remove Background</button>
+      <canvas id="canvas" width="500" height="500"></canvas>
+
+      <div class="background-options">
+        <p>Select a custom background:</p>
+        <div class="backgrounds">
+          <img src="bg1.jpg" alt="Background 1" class="bg-thumb" />
+          <img src="bg2.jpg" alt="Background 2" class="bg-thumb" />
+          <img src="bg3.jpg" alt="Background 3" class="bg-thumb" />
+        </div>
+      </div>
+
+      <div class="download-buttons">
+        <button onclick="downloadImage('png')">Download PNG</button>
+        <button onclick="downloadImage('jpeg')">Download JPEG</button>
+      </div>
+    </section>
+
+    <aside class="ad-section">
+      <p><strong>Ad:</strong><br>Try Pro Background Remover!</p>
+      <img src="ad-placeholder.jpg" alt="Ad" />
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Background Remover | Created by <a href="mailto:praju6900@gmail.com" id="creator-name">Poosala Raju Chary</a></p>
+    <img src="qr-support.png" alt="Support Developer QR" class="qr-code" />
+  </footer>
+</body>
+</html>

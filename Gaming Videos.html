@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔥 Top Gaming Videos | Watch the Best FPS, Open-World & Action Games!</title>
+
+ <!-- ✅ Meta SEO -->
+  <meta name="description" content="Watch the best gaming videos including FPS, open-world adventures, and viral action gameplay. Updated regularly with the top YouTube content for gamers." />
+  <meta name="keywords" content="gaming videos, best fps games, open world games, gaming YouTube, top gaming clips, game walkthroughs, action games, pc gaming" />
+  <meta name="author" content="Poosala Raju Chary" />
+
+  <!-- ✅ Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="🔥 Top Gaming Videos | Best FPS & Open World Games" />
+  <meta property="og:description" content="Check out the most epic gameplay videos covering FPS, sandbox, and action games. Perfect for every gamer!" />
+  <meta property="og:image" content="https://poosalaraju.com/preview.jpg" /> <!-- Replace with your thumbnail -->
+  <meta property="og:url" content="https://poosalaraju.com/gaming-videos" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="🔥 Top Gaming Videos | Best FPS & Open World Games" />
+  <meta name="twitter:description" content="Watch high-quality YouTube videos of the latest and greatest gaming content!" />
+  <meta name="twitter:image" content="https://poosalaraju.com/preview.jpg" /> <!-- Replace with your image -->
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111;
+      color: #fff;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    #video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      border: 2px solid white;
+      border-radius:5px;
+      box-shadow:0px 0px 5px black;
+    }
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #222;
+      border: 2px solid white;
+      border-radius:10px;
+      box-shadow:0px 0px 5px white;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gaming Videos</h1>
+  <div id="video-container"></div>
+
+  <script>
+    // links
+    const videoIDs = [
+      'u_sMeGyV8i0',
+      'ChKVQCK3aNA',
+      'FlH2nafA8Zs',
+      'Sced0Q-TLZY',
+      'yZIHL-gX4ts',
+      'tnHSu-UlipA',
+      'qjKI0tFyZPE',
+      '0fPBZctDl5A',
+      'j5vp5fTyoVM&t=8s',
+      '07RPNUoOEss',
+      'X7oyZ10gfR4',
+      'fjylua7FCz0&t=1234s',
+      'dshX_A5uGoo',
+      'CDgR46ktVJM',
+      'Yxa46JPIjq8'
+    ];
+
+    // Async loading function
+    async function loadVideos() {
+      const container = document.getElementById('video-container');
+
+      // Simulate async (e.g., from API or dynamic load)
+      await new Promise(resolve => setTimeout(resolve, 500));
+
+      videoIDs.forEach(id => {
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${id}`;
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'video-frame';
+        wrapper.appendChild(iframe);
+
+        container.appendChild(wrapper);
+      });
+    }
+
+    // Load videos after DOM is ready
+    document.addEventListener('DOMContentLoaded', loadVideos);
+  </script>
+</body>
+</html>
