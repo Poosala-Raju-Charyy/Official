@@ -1,5 +1,5 @@
 # Official
-#**Social Media Accounts:**
-#Facebook: www.facebook.com/poosala.raju.3
-#Instagram: @prajuchary05
-#Threads: @prajuchary05
+**Social Media Accounts:**
+_Facebook_: www.facebook.com/poosala.raju.3_
+Instagram_: @prajuchary05
+_Threads_: @prajuchary05
