@@ -6,11 +6,11 @@ _Threads_: @prajuchary05 <br/>
 <table>
   <th>Profile</th>
   <tr>
-    <td>Name:</td>
+    <td>Name</td>
     <td>Poosala Raju Chary</td>
   </tr>
   <tr>
-    <td>Father's Name:</td>
+    <td>Father's Name</td>
     <td>Late Poosala Mohan</td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ _Threads_: @prajuchary05 <br/>
   
   <tr>
     <td>Permanent Address</td>
-    <td>B Nagar, Hyderabad</td>
+    <td>LB Nagar, Hyderabad</td>
   </tr>
   
   <tr>
