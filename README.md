@@ -1,6 +1,6 @@
 # Official
 <div style="position:absolute;border:1px solid black;border-radius:15px;width:500px;height:150px;">
-  **Social Media Accounts:**<br/>
+  Social Media Accounts:<br/>
   _Facebook_: www.facebook.com/poosala.raju.3 <br/>
   _Instagram_: @prajuchary05 <br/>
   _Threads_: @prajuchary05 <br/>
