@@ -1,11 +1,10 @@
 # Official
-<div style="position:absolute;border:1px solid black;border-radius:15px;width:500px;height:150px;background:orange;">
-  Social Media Accounts:<br/>
+**Social Media Accounts:**<br/>
   _Facebook_: www.facebook.com/poosala.raju.3 <br/>
   _Instagram_: @prajuchary05 <br/>
-  _Threads_: @prajuchary05 <br/>
+  _Threads_: @prajuchary05 <br/>  
   <p>----------------------------------------------------------------------------------------------------------------</p>
-</div>
+
 <div>Updated On: November 5, 2026 10:00 AM</div>
 <table>
   <th colspan="2">Profile</th>
