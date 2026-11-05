@@ -1,5 +1,5 @@
 # Official
-<div style="border:1px dashed black;border-radius:15px;width:auto;height:auto;">
+<div style="border:1px dashed black;border-radius:15px;width:auto;height:150px;">
   **Social Media Accounts:**<br/>
   _Facebook_: www.facebook.com/poosala.raju.3 <br/>
   _Instagram_: @prajuchary05 <br/>
