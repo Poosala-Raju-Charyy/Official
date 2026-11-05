@@ -8,8 +8,11 @@
 </div>
 
 <table>
-  <th>Profile</th>
-  <tr>
+  <th span="2">Profile</th>
+ <tr>
+  <td>Updated On: November 5, 2026 10:00 AM</td>
+ </tr> 
+ <tr>
     <td>Name</td>
     <td>Poosala Raju Chary</td>
   </tr>
